@@ -1,0 +1,9 @@
+[project]
+name = "pid-motor-sim"
+version = "1.0.0"
+description = "Discrete PID position control of a DC motor with saturation, anti-windup, and an interactive tuner"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
