@@ -10,6 +10,8 @@ Additions to the textbook form:
   4. Anti-windup (clamping): integration pauses while the output is saturated
      and the error would increase saturation.
 """
+from __future__ import annotations
+
 from dataclasses import dataclass, field
 
 

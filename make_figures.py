@@ -83,7 +83,7 @@ def write_table(rows, path="results.md"):
     for name, m, final_err in rows:
         settle = "never" if np.isnan(m["settling_time"]) else f"{m['settling_time'] * 1000:.0f}"
         lines.append(f"| {name} | {m['rise_time'] * 1000:.0f} | {m['overshoot_pct']:.1f} | {settle} | {final_err:.2f} |")
-    Path(path).write_text("\n".join(lines) + "\n")
+    Path(path).write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
 
 
